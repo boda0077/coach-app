@@ -9,16 +9,16 @@ const intFont = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
-      <header className=" h-screen bg-black/50 ">
-        <Nav />
+    <> <Nav />
+      <header className=" h-screen bg-black/50 max-h-250 ">
+       
         <div className="absolute -z-10   top-0 left-0 w-full h-screen overflow-hidden">
           <Image
             src="/Images/Home/header-bg.png"
             alt="Background Image"
             layout="fill"
             objectFit="cover"
-            className=" grayscale-100 brightness-70"
+            className=" grayscale-100 brightness-70 max-w-350 mx-auto"
           />
         </div>
         <div className="pl-18 pb-8 max-md:p-4 max-md:pl-4 w-full h-[84%]  flex flex-col justify-center max-w-360 mx-auto max-md:text-center   ">
@@ -174,6 +174,18 @@ Nutrition</h3>
            </div>
        
       </div>
+
+            <div className=" my-20 bg-surface grid text-center justify-center items-center h-fit  ">
+              <div className="grid text-center justify-center items-center leading-25 tracking-[-5%] my-20">
+              <span className={`text-[6rem] max-md:text-[5rem] max-sm:text-[3rem] text-[#f5f5f5] text-center uppercase font-black ` + intFont.className }>stop guessing.</span>
+              <span className={"text-[6rem] max-md:text-[5rem] max-sm:text-[3rem] text-main text-center uppercase font-black " + intFont.className}>start executting.</span>
+
+              </div>
+              <Button text="apply for coaching" className="text-2xl font-medium py-6 px-20 mb-15 w-fit mx-auto text-surface " font={intFont} />
+              <span className={` text-gray-400 uppercase ` + intFont.className}>Limited spots available for Q4 intake</span>
+
+            </div>
+
     </>
   );
 }

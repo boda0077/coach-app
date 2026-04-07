@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Lexend } from "next/font/google";
 import Button from "./button";
 import { useState } from "react";
+import Link from "next/link";
 
 const lexFont = Lexend({ subsets: ["latin"] });
 
@@ -14,7 +15,7 @@ export default function Nav() {
   };
 
   return (
-    <nav className=" sticky top-0 py-8 px-8 flex justify-between items-center bg-[#131313]/60   backdrop:blur-[20px] ">
+    <nav className=" z-100  sticky top-0 py-8 px-8 flex justify-between items-center bg-[#131313]/60   backdrop:blur-[20px] ">
       <span
         className={
           lexFont.className +
@@ -34,28 +35,28 @@ bg-black/90 p-6 rounded-xl place-items-center w-100 h-80`}
           }
         >
           <li>
-            <a
+            <Link
               className="text-[#f5f5f5] uppercase hover:text-greenNeon"
-              href="/"
+              href={"/"}
             >
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-[#f5f5f5] uppercase hover:text-greenNeon"
               href="/about"
             >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-[#f5f5f5] uppercase hover:text-greenNeon"
               href="/contact"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -68,28 +69,28 @@ bg-black/90 p-6 rounded-xl place-items-center w-100 h-80`}
         }
       >
         <li>
-          <a
+          <Link
             className="text-[#f5f5f5] uppercase hover:text-greenNeon "
             href="/"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className="text-[#f5f5f5] uppercase hover:text-greenNeon "
             href="/about"
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             className="text-[#f5f5f5] uppercase hover:text-greenNeon "
             href="/contact"
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <Button text="Get Started" font={lexFont} className="max-md:hidden" />
