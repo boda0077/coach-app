@@ -15,3 +15,13 @@
     background-color:  #cafd00 ;
     color: #0e0e0e;
 }
+@keyframes scroll {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}

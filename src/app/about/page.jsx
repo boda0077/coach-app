@@ -10,8 +10,8 @@ export default function About() {
   return (
     <>
       <Nav />
-      <div className="grid grid-cols-[1fr_550px] items-center  max-w-350 2xl:mx-auto mt-12 2xl:gap-40  ">
-        <div className="pl-12  pb-8 max-md:p-4 max-md:pl-4 w-full h-[84%]  flex flex-col justify-center max-w-360  max-md:text-center   ">
+      <div className="grid grid-cols-[1fr_500px] max-lg:flex max-lg:flex-col-reverse items-center  max-w-350 2xl:mx-auto mt-12 2xl:gap-40 max-sm:w-fit  ">
+        <div className="pl-12  pb-8 max-md:p-4 max-md:pl-4 w-full h-[84%] max-lg:text-center max-lg:items-center  flex flex-col justify-center max-w-350  max-md:text-center   ">
           <span
             className={
               "uppercase w-fit text-surface-container-low text-main text-sm tracking-widest py-0.5 px-4 mb-6 max-md:mx-auto   " +
@@ -22,7 +22,7 @@ export default function About() {
           </span>
           <h1
             className={
-              " text-[9rem] font-extrabold text-white tracking-[-10%] leading-30 max-md:text-[7rem] max-sm:text-[5rem] " +
+              " text-[9rem] font-extrabold text-white tracking-[-10%] leading-30 max-md:text-[7rem] max-sm:text-[4rem] " +
               lexFont.className
             }
           >
@@ -30,7 +30,7 @@ export default function About() {
             <br />
             <span
               className={
-                "text-[9rem] font-extrabold text-greenNeon tracking-[-10%] max-md:text-[7rem] max-sm:text-[5rem] " +
+                "text-[9rem] font-extrabold text-greenNeon tracking-[-10%] max-md:text-[7rem] max-sm:text-[4rem] " +
                 lexFont.className
               }
             >
@@ -39,7 +39,7 @@ export default function About() {
           </h1>
           <p
             className={
-              "text-gray-400 w-110 py-8  text-lg max-md:mx-auto max-sm:text-[1rem] max-sm:w-75      " +
+              "text-gray-400 w-110 py-8  text-lg max-md:mx-auto max-sm:text-[0.85rem] max-sm:w-70       " +
               intFont.className
             }
           >
@@ -50,20 +50,21 @@ export default function About() {
           </p>
         </div>
 
-        <div className="relative  ">
+        <div className="relative w-fit overflow-hidden  ">
           <Image
             src="/Images/About/profile.png"
             alt="Background Image"
             objectFit="cover"
             width={450}
             height={450}
-            className=" -z-1  grayscale-100 brightness-70 max-w-350 mx-auto hover:grayscale-0 transition-all hover:scale-105 duration-300 "
+            loading="lazy"
+            className=" -z-1 max-md:w-70 grayscale-100 brightness-70 max-w-350 mx-auto hover:grayscale-0 transition-all hover:scale-105 duration-300 "
           />
           <div className="w-30 h-30 border-t-2 border-l-2 border-main absolute -top-10 -left-2"></div>
-          <div className=" z-1 w-[90%] text-lg  float-right py-4 px-10 bg-surface/60 backdrop:blur-[20px] relative bottom-20  ">
+          <div className=" z-1 w-[90%] text-lg  float-right py-4 px-10 bg-surface/60 backdrop:blur-[20px] relative bottom-20 max-md:text-center max-sm:px-0 max-md:float-none  ">
             <span
               className={
-                "text-[#f5f5f5] font-black   text-4xl   " + lexFont.className
+                "text-[#f5f5f5] font-black   text-4xl max-sm:text-3xl   " + lexFont.className
               }
             >
               "DISCIPLINE IS A SCIENCE."
@@ -72,10 +73,10 @@ export default function About() {
         </div>
       </div>
       <div className="grid   px-10 py-10 bg-[rgb(19,19,19)]  ">
-        <h1 className={"text-[5rem] text-[#f5f5f5] font-black  " + lexFont.className}>
+        <h1 className={"text-[5rem] text-[#f5f5f5] font-black max-md:text-[3rem]  " + lexFont.className}>
           Work History <span className="text-main font-bold text-sm">+5 Years</span>
         </h1>
-        <div className="grid grid-cols-[375px_375px_375px] gap-4 mx-auto mt-10">
+        <div className="grid grid-cols-3 max-lg:grid-cols-2  max-md:grid-cols-1 gap-4 mx-auto mt-10">
           <WorkCard
             date="2025-present"
             about="Head of Athletic Performance for elite competitors. Specializing in neural drive and power phase transitions."

@@ -17,6 +17,7 @@ export default function Home() {
             src="/Images/Home/header-bg.png"
             alt="Background Image"
             layout="fill"
+            loading="lazy"
             objectFit="cover"
             className=" grayscale-100 brightness-70 max-w-350 mx-auto"
           />
@@ -73,18 +74,18 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="w-full h-75 bg-surface border-t border-t-greenNeon flex justify-between items-center px-8  max-md:h-fit max-w-350 mx-auto ">
+      <div className="w-full h-75 bg-surface border-t border-t-greenNeon flex justify-between items-center px-15 max-lg:py-6 max-md:h-fit max-w-350 mx-auto max-md:flex-col  ">
 
-        <div className="grid leading-20">
-          <h1 className="text-[8rem] font-extrabold text-main">10+</h1>
+        <div className="grid leading-20 max-lg:leading-15">
+          <h1 className="text-[8rem] max-lg:text-[5rem] font-extrabold text-main ">10+</h1>
           <span className={"text-gray-400 uppercase text-[0.75rem] pl-2 " + lexFont.className}>Years Professional Experience</span>
         </div>
-        <div className="grid leading-20">
-          <h1 className="text-[8rem] font-extrabold text-main">500+</h1>
+        <div className="grid leading-20 max-lg:leading-15">
+          <h1 className="text-[8rem] max-lg:text-[5rem] font-extrabold text-main">500+</h1>
           <span className={"text-gray-400 uppercase text-[0.75rem] pl-2 " + lexFont.className}>Transformations Completed</span>
         </div>
-        <div className="grid leading-20">
-          <h1 className="text-[8rem] font-extrabold text-main">Elite</h1>
+        <div className="grid leading-20 max-lg:leading-15">
+          <h1 className="text-[8rem] max-lg:text-[5rem] font-extrabold text-main">Elite</h1>
           <span className={"text-gray-400 uppercase text-[0.75rem] pl-2 " + lexFont.className}>NSCA & NASM Certifications
 </span>
         </div>
@@ -94,29 +95,30 @@ export default function Home() {
 
       <div className="bg-[rgb(19,19,19)] py-35 grid justfity-center max-w-350 mx-auto">
 
-        <div className="flex justify-between items-end px-6">
-          <h1 className={"text-[6rem] text-[#f5f5f5] font-extrabold tracking-[-9%] leading-20 " + lexFont.className }>The Kinetic Methodology</h1>
-          <p className={"text-gray-400 w-100 text-right  " + intFont.className}>A multi-disciplinary approach to human performance optimization, focusing on physiological efficiency.</p>
+        <div className="flex justify-between max-lg:flex-col max-lg:mx-auto  max-lg:justify-center max-lg:items-center  items-end px-6 ">
+          <h1 className={"text-[6rem] max-lg:text-[3.8rem] max-sm:text-[2.5rem] text-[#f5f5f5] max-lg:text-center font-extrabold tracking-[-9%] leading-20 " + lexFont.className }>The Kinetic Methodology</h1>
+          <p className={"text-gray-400 w-100 text-right max-lg:text-center max-sm:w-[80%]   " + intFont.className}>A multi-disciplinary approach to human performance optimization, focusing on physiological efficiency.</p>
         </div>
 
       
-        <div className="w-[95%] h-110 mt-15 grid grid-cols-[1fr_400px] gap-4">
+        <div className="w-[95%] h-110 mt-15 grid grid-cols-[1fr_400px] max-lg:grid-cols-2 max-md:grid-cols-1 max-md:h-200 mx-auto gap-4">
 
         <div className="relative w-full h-full overflow-hidden group">
   <Image 
     src="/Images/Home/card-one.png"
     alt="Background Image"
     layout="fill"
+    loading="lazy"
     objectFit="cover"
     className="absolute inset-0 w-full h-full object-cover grayscale-100 brightness-70 transition-transform duration-500 transform group-hover:scale-110"
   />
 
  
   <div className="relative z-10 flex flex-col items-start justify-end pl-6 h-full">
-    <h1 className={`text-[4rem] font-extrabold text-main tracking-[-10%] ${lexFont.className}`}>
+    <h1 className={`text-[4rem] max-md:text-[2rem] font-extrabold text-main tracking-[-10%] ${lexFont.className}`}>
       Hypertrophy Systems
     </h1>
-    <p className={`text-gray-400 w-150 text-left text-lg ${intFont.className}`}>
+    <p className={`text-gray-400 w-150 text-left text-lg  max-md:text-[1rem] max-md:w-[95%] ${intFont.className}`}>
       Science-backed training blocks designed to maximize muscular adaptations through progressive overload and mechanical tension management.
     </p>
   </div>
@@ -125,7 +127,7 @@ export default function Home() {
 
             <img src="/icons/elc.svg" alt="elc icon" className="w-15 h-15" />
             <div className="flex flex-col justify-end items-start">
-               <h3 className={`text-[2.5rem] font-semibold text-[rgb(19,19,19)]  leading-15 uppercase ` + intFont.className}>peak preformance</h3>
+               <h3 className={`text-[2.5rem] max-sm:text-3xl font-semibold text-[rgb(19,19,19)]  leading-15 uppercase ` + intFont.className}>peak preformance</h3>
             <p className={`text-[rbg(19,19,19)]  `}>Engineered for those who demand more than 'average'. We optimize for power, speed, and endurance.</p>
             </div>
 
@@ -133,7 +135,7 @@ export default function Home() {
            
            </div>
 
-        <div className="w-[95%] h-110 mt-15 grid grid-cols-[400px_1fr] gap-4">
+        <div className="w-[95%] h-110 mt-15 grid grid-cols-[400px_1fr] max-lg:grid-cols-2 max-md:grid-cols-1 max-md:h-200 mx-auto gap-4">
 
           <div className="bg-[#1B1B1B] p-10 rounded-sm grid grid-rows-[1fr_50px] justify-start text-[#f5f5f5] ">
 
@@ -155,16 +157,17 @@ Nutrition</h3>
     src="/Images/Home/card-two.png"
     alt="Background Image"
     layout="fill"
+    loading="lazy"
     objectFit="cover"
     className="absolute inset-0 w-full h-full object-cover grayscale-100 brightness-70 transition-transform duration-500 transform group-hover:scale-110"
   />
 
  
   <div className="relative z-10 flex flex-col items-start justify-end pl-6 h-full">
-    <h1 className={`text-[4rem] font-extrabold text-main tracking-[-10%] ${lexFont.className}`}>
+    <h1 className={`text-[4rem] max-md:text-[2rem] font-extrabold text-main tracking-[-10%] ${lexFont.className}`}>
       Direct Coaching Access
     </h1>
-    <p className={`text-gray-400 w-150 text-left text-lg ${intFont.className}`}>
+    <p className={`text-gray-400 w-150 text-left text-lg max-md:w-[95%] max-md:text-[1rem] ${intFont.className}`}>
       Weekly check-ins, form analysis, and real-time protocol adjustments via our dedicated athlete portal.
     </p>
   </div>
@@ -181,7 +184,7 @@ Nutrition</h3>
               <span className={"text-[6rem] max-md:text-[5rem] max-sm:text-[3rem] text-main text-center uppercase font-black " + intFont.className}>start executting.</span>
 
               </div>
-              <Button text="apply for coaching" className="text-2xl font-medium py-6 px-20 mb-15 w-fit mx-auto text-surface " font={intFont} />
+              <Button text="apply for coaching" className="text-2xl font-medium py-6 px-20 mb-15 w-fit mx-auto text-surface  " font={intFont} />
               <span className={` text-gray-400 uppercase ` + intFont.className}>Limited spots available for Q4 intake</span>
 
             </div>
